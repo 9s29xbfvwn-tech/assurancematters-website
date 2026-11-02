@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Assurance Matters is a specialist UK consultancy advising on information assurance, governance, metrics and estimation. Led by Dr Carol Buttle, with over 35 years' experience across defence, counter-terrorism, banking, finance and healthcare.">
+  <meta name="description" content="Assurance Matters (BBS IT Associates Ltd) provides specialist information assurance, digital identity, CNI and security compliance advice. Led by Dr Carol Buttle, with over 35 years' experience across defence, counter-terrorism, banking, finance and healthcare.">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
   <meta name="referrer" content="no-referrer">
   <meta name="color-scheme" content="light">
@@ -59,8 +59,8 @@
     .svc-grid{display:grid;grid-template-columns:1fr;gap:0}
     @media(min-width:620px){.svc-grid{grid-template-columns:1fr 1fr;gap:0 2.5rem}}
     .svc{padding:1.5rem 0;border-top:1px solid var(--line)}
-    .svc:first-child,.svc:nth-child(2){border-top:none}
-    @media(max-width:619px){.svc:nth-child(2){border-top:1px solid var(--line)}}
+    .svc:first-child{border-top:none}
+    @media(min-width:620px){.svc:first-child{grid-column:1/-1}.svc:nth-child(2){border-top:1px solid var(--line)}}
     .svc .num{font-family:var(--serif);color:var(--accent);font-size:.9rem;font-weight:700}
     .svc h3{font-size:1.2rem;margin:.15rem 0 .5rem}
     .svc p{font-size:.98rem;color:var(--body)}
@@ -74,6 +74,9 @@
     /* principal */
     .principal p{color:var(--body)}
     .principal .name{font-family:var(--serif);color:var(--ink);font-size:1.15rem;font-weight:600}
+
+    .creds{list-style:none;margin-top:1.1rem;display:grid;gap:.55rem;max-width:var(--measure)}
+    .creds li{padding:.55rem 0 .55rem 1rem;border-left:3px solid var(--accent);background:var(--surface);padding-left:.9rem;color:var(--body);font-size:.97rem}
 
     /* contact */
     .contact-panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:clamp(1.4rem,3vw,2rem)}
@@ -99,21 +102,21 @@
 
     <header>
       <div class="lockup"><span class="mark" aria-hidden="true"></span><span class="wordmark">Assurance&nbsp;Matters</span></div>
-      <p class="descriptor">Information assurance &amp; governance consultancy</p>
+      <p class="descriptor">Digital identity, CNI &amp; security compliance</p>
     </header>
 
     <main>
       <section class="section lead" aria-labelledby="lead-h">
         <h1 id="lead-h">Specialist information assurance and governance.</h1>
-        <p class="intro"><strong>Assurance Matters advises organisations on information assurance, governance, metrics and estimation.</strong> Our work focuses on practical controls and clear assurance evidence for stakeholders.</p>
+        <p class="intro"><strong>Assurance Matters advises organisations on information assurance, governance, metrics and estimation.</strong> Our work spans digital identity, critical national infrastructure (CNI) and security compliance, with a focus on practical controls and clear assurance evidence for stakeholders.</p>
       </section>
 
       <section class="section experience" aria-labelledby="exp-h">
         <h2 id="exp-h" class="overline" style="margin-bottom:1.4rem">At a glance</h2>
         <div class="exp-grid">
           <div class="fact"><span class="fig">35+ years</span><span class="k">Dr&nbsp;Carol&nbsp;Buttle&rsquo;s experience in information assurance</span></div>
-          <div class="fact"><span class="fig">Regulated sectors</span><span class="k">Defence, counter-terrorism, banking, finance and healthcare</span></div>
-          <div class="fact"><span class="fig">ISO 27001 &amp; NIST</span><span class="k">Standards and guidance we advise on</span></div>
+          <div class="fact"><span class="fig">Regulated sectors</span><span class="k">Defence, counter-terrorism, CNI, banking, finance and healthcare</span></div>
+          <div class="fact"><span class="fig">ISO 27001, NIST &amp; Cyber Essentials</span><span class="k">Standards and schemes we advise on</span></div>
         </div>
       </section>
 
@@ -122,10 +125,11 @@
           <div class="label"><h2 id="svc-h" class="overline">What we do</h2></div>
           <div class="content">
             <div class="svc-grid">
-              <div class="svc"><span class="num">01</span><h3>Governance</h3><p>We review existing governance policies, identify gaps, and draft clear policies, terms of reference and reporting structures. Where it helps, we run briefing workshops so good practice becomes part of how teams work — not theory left on a shelf.</p></div>
-              <div class="svc"><span class="num">02</span><h3>Assurance</h3><p>Assurance for public- and private-sector projects. We provide the guidance and structures organisations need to give stakeholders assurance evidence relating to compliance — across security, safety and financial matters — and we help evaluate challenging or failing projects.</p></div>
-              <div class="svc"><span class="num">03</span><h3>Metrics</h3><p>Benchmarking, metrics and KPIs drawn from continuous research across industries, so leadership teams can measure compliance, risk and performance against meaningful, objective indicators.</p></div>
-              <div class="svc"><span class="num">04</span><h3>Estimation</h3><p>Adaptable estimation models built on relevant sector benchmarks, giving a realistic picture of the cost, effort and schedule a project involves — across information security, software, construction, change management, biometrics and infrastructure.</p></div>
+              <div class="svc"><span class="num">01</span><h3>Digital identity &amp; biometrics</h3><p>Security and assurance for digital identity and biometric systems — from risk modelling for multi-modal biometrics to the governance, controls and evidence that trust frameworks and procurement teams expect.</p></div>
+              <div class="svc"><span class="num">02</span><h3>Governance</h3><p>We review existing governance policies, identify gaps, and draft clear policies, terms of reference and reporting structures. Where it helps, we run briefing workshops so good practice becomes part of how teams work — not theory left on a shelf.</p></div>
+              <div class="svc"><span class="num">03</span><h3>Assurance</h3><p>Assurance for public- and private-sector projects. We provide the guidance and structures organisations need to give stakeholders assurance evidence relating to compliance — across security, safety and financial matters — and we help evaluate challenging or failing projects.</p></div>
+              <div class="svc"><span class="num">04</span><h3>Metrics</h3><p>Benchmarking, metrics and KPIs drawn from continuous research across industries, so leadership teams can measure compliance, risk and performance against meaningful, objective indicators.</p></div>
+              <div class="svc"><span class="num">05</span><h3>Estimation</h3><p>Adaptable estimation models built on relevant sector benchmarks, giving a realistic picture of the cost, effort and schedule a project involves — across information security, software, construction, change management, biometrics and infrastructure.</p></div>
             </div>
           </div>
         </div>
@@ -151,7 +155,14 @@
           <div class="label"><h2 id="prin-h" class="overline">Principal</h2></div>
           <div class="content">
             <p class="name">Dr Carol Buttle</p>
-            <p>Assurance Matters is led by Dr Carol Buttle, who brings over 35 years' experience in information assurance and governance across regulated, high-consequence sectors. Her experience spans defence, counter-terrorism, healthcare, banking and finance.</p>
+            <p>Assurance Matters is led by Dr Carol Buttle, Technical Director of BBS IT Associates, who brings over 35 years' experience in information assurance and governance across defence, counter-terrorism, critical national infrastructure, healthcare, banking and finance. She has served as Technical Director and CISO on cyber security and biometric programmes, and has published on biometric security and risk modelling for multi-modal biometrics.</p>
+            <ul class="creds">
+              <li>CESG Certified Professional (CCP) Lead Accreditor</li>
+              <li>Accredited Cyber Essentials consultant</li>
+              <li>President and Distinguished Fellow, ASEP</li>
+              <li>Senior Advisor and Distinguished Fellow, SEC — Lead Chair, Metric and Benchmark Special Interest Group</li>
+              <li>Senior Advisor for Security Systems and Biometrics, SSEC</li>
+            </ul>
           </div>
         </div>
       </section>
