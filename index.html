@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Assurance Matters is a specialist UK consultancy advising on information assurance, governance, metrics and estimation. Led by Dr Carol Buttle, with over 35 years' experience across defence, counter-terrorism, banking, finance and healthcare.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light">
+  <title>Assurance Matters — Information assurance &amp; governance consultancy</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%231F4E6B'/%3E%3Ctext x='16' y='21.5' font-family='Georgia,serif' font-size='15' font-weight='700' fill='%23FAF9F6' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#FAF9F6; --surface:#FFFFFF;
+      --ink:#12202E; --body:#2B3744; --muted:#536071;
+      --accent:#1F4E6B; --accent-soft:#E4ECF0; --line:#C9D1D8;
+      --serif:Charter,"Bitstream Charter","Sitka Text",Cambria,Georgia,"Times New Roman",serif;
+      --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      --maxw:1120px; --measure:64ch;
+    }
+    html{-webkit-text-size-adjust:100%}
+    body{background:var(--bg);color:var(--body);font-family:var(--sans);font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1.25rem,5vw,2.5rem)}
+    h1,h2,h3,.fig,.wordmark{font-family:var(--serif);color:var(--ink);font-weight:600;letter-spacing:-.01em;font-variant-numeric:lining-nums}
+    p{max-width:var(--measure)}
+    a{color:var(--accent)}
+    a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+    .overline{font-family:var(--sans);font-size:.8125rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
+
+    /* header */
+    header{padding:clamp(2.2rem,5vw,3.2rem) 0 clamp(1.4rem,3vw,2rem)}
+    .lockup{display:flex;align-items:center;gap:.7rem}
+    .mark{width:30px;height:30px;border-radius:6px;background:var(--accent);flex:none}
+    .wordmark{font-size:1.4rem;font-weight:700;letter-spacing:-.015em}
+    .descriptor{margin-top:.5rem;color:var(--muted);font-size:.98rem}
+
+    /* generic section with asymmetric label + content */
+    .section{padding:clamp(2.4rem,5.5vw,4rem) 0;border-top:1px solid var(--line)}
+    .section-grid{display:grid;grid-template-columns:1fr;gap:1.1rem 2.5rem}
+    @media(min-width:900px){.section-grid{grid-template-columns:200px 1fr}}
+    .label{color:var(--muted)}
+    .content>*+*{margin-top:1rem}
+
+    /* lead */
+    .lead{padding-top:clamp(.5rem,2vw,1.5rem);border-top:none}
+    h1{font-size:clamp(2rem,1.4rem + 2.6vw,3.15rem);line-height:1.12;max-width:16ch}
+    .lead .intro{font-size:clamp(1.12rem,1.03rem + .5vw,1.4rem);line-height:1.5;color:var(--body);max-width:56ch;margin-top:1.1rem}
+    .lead .intro strong{color:var(--ink);font-weight:600}
+
+    /* experience strip */
+    .experience{background:var(--accent-soft);border-top:1px solid var(--line)}
+    .exp-grid{display:grid;grid-template-columns:1fr;gap:1.6rem}
+    @media(min-width:680px){.exp-grid{grid-template-columns:repeat(3,1fr);gap:2rem}}
+    .fact .fig{display:block;font-size:clamp(1.7rem,1.3rem + 1.4vw,2.3rem);line-height:1.1}
+    .fact .k{display:block;margin-top:.35rem;color:var(--body);font-size:.95rem;line-height:1.45}
+
+    /* services */
+    .svc-grid{display:grid;grid-template-columns:1fr;gap:0}
+    @media(min-width:620px){.svc-grid{grid-template-columns:1fr 1fr;gap:0 2.5rem}}
+    .svc{padding:1.5rem 0;border-top:1px solid var(--line)}
+    .svc:first-child,.svc:nth-child(2){border-top:none}
+    @media(max-width:619px){.svc:nth-child(2){border-top:1px solid var(--line)}}
+    .svc .num{font-family:var(--serif);color:var(--accent);font-size:.9rem;font-weight:700}
+    .svc h3{font-size:1.2rem;margin:.15rem 0 .5rem}
+    .svc p{font-size:.98rem;color:var(--body)}
+
+    /* approach */
+    .principles{list-style:none;margin-top:1.1rem;display:grid;gap:.9rem}
+    .principles li{padding-left:1.1rem;position:relative;max-width:var(--measure);color:var(--body)}
+    .principles li::before{content:"";position:absolute;left:0;top:.68em;width:.5rem;height:.5rem;background:var(--accent);border-radius:50%}
+    .principles strong{color:var(--ink);font-weight:600}
+
+    /* principal */
+    .principal p{color:var(--body)}
+    .principal .name{font-family:var(--serif);color:var(--ink);font-size:1.15rem;font-weight:600}
+
+    /* contact */
+    .contact-panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:clamp(1.4rem,3vw,2rem)}
+    .contact-panel h2{font-size:1.25rem;margin-bottom:.4rem}
+    .contact-panel p{color:var(--muted);margin-bottom:.9rem}
+    .contact-panel a{display:inline-block;max-width:100%;overflow-wrap:anywhere;font-size:1.1rem;font-weight:600;color:var(--accent);text-decoration:none;border-bottom:2px solid rgba(31,78,107,.35);padding:.2rem 0;min-height:44px;line-height:1.9}
+    .contact-panel a:hover{border-bottom-color:var(--accent)}
+
+    /* footer */
+    footer{border-top:1px solid var(--line);padding:1.8rem 0 2.6rem;margin-top:clamp(2rem,4vw,3rem)}
+    footer p{color:var(--muted);font-size:.82rem;line-height:1.55;max-width:none}
+
+    @media(prefers-reduced-motion:no-preference){a{transition:border-color .15s,color .15s}}
+    @media print{
+      body{background:#fff;color:#000}
+      .experience,.contact-panel{background:transparent}
+      .section,.experience,footer{border-color:#999}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <div class="lockup"><span class="mark" aria-hidden="true"></span><span class="wordmark">Assurance&nbsp;Matters</span></div>
+      <p class="descriptor">Information assurance &amp; governance consultancy</p>
+    </header>
+
+    <main>
+      <section class="section lead" aria-labelledby="lead-h">
+        <h1 id="lead-h">Specialist information assurance and governance.</h1>
+        <p class="intro"><strong>Assurance Matters advises organisations on information assurance, governance, metrics and estimation.</strong> Our work focuses on practical controls and clear assurance evidence for stakeholders.</p>
+      </section>
+
+      <section class="section experience" aria-labelledby="exp-h">
+        <h2 id="exp-h" class="overline" style="margin-bottom:1.4rem">At a glance</h2>
+        <div class="exp-grid">
+          <div class="fact"><span class="fig">35+ years</span><span class="k">Dr&nbsp;Carol&nbsp;Buttle&rsquo;s experience in information assurance</span></div>
+          <div class="fact"><span class="fig">Regulated sectors</span><span class="k">Defence, counter-terrorism, banking, finance and healthcare</span></div>
+          <div class="fact"><span class="fig">ISO 27001 &amp; NIST</span><span class="k">Standards and guidance we advise on</span></div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="svc-h">
+        <div class="section-grid">
+          <div class="label"><h2 id="svc-h" class="overline">What we do</h2></div>
+          <div class="content">
+            <div class="svc-grid">
+              <div class="svc"><span class="num">01</span><h3>Governance</h3><p>We review existing governance policies, identify gaps, and draft clear policies, terms of reference and reporting structures. Where it helps, we run briefing workshops so good practice becomes part of how teams work — not theory left on a shelf.</p></div>
+              <div class="svc"><span class="num">02</span><h3>Assurance</h3><p>Assurance for public- and private-sector projects. We provide the guidance and structures organisations need to give stakeholders assurance evidence relating to compliance — across security, safety and financial matters — and we help evaluate challenging or failing projects.</p></div>
+              <div class="svc"><span class="num">03</span><h3>Metrics</h3><p>Benchmarking, metrics and KPIs drawn from continuous research across industries, so leadership teams can measure compliance, risk and performance against meaningful, objective indicators.</p></div>
+              <div class="svc"><span class="num">04</span><h3>Estimation</h3><p>Adaptable estimation models built on relevant sector benchmarks, giving a realistic picture of the cost, effort and schedule a project involves — across information security, software, construction, change management, biometrics and infrastructure.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="appr-h">
+        <div class="section-grid">
+          <div class="label"><h2 id="appr-h" class="overline">How we work</h2></div>
+          <div class="content">
+            <p>We work on a simple principle: governance and assurance should support delivery, not get in its way.</p>
+            <ul class="principles">
+              <li><strong>Led by Dr Carol Buttle</strong>, drawing on her long-standing information assurance experience.</li>
+              <li><strong>Practical over theoretical</strong> — clear policies and working controls, written in plain language.</li>
+              <li><strong>Evidence-based</strong> — benchmarking, metrics and KPIs that support clear stakeholder reporting.</li>
+              <li><strong>Briefings and workshops</strong> — practical guidance for teams putting governance into practice.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section principal" aria-labelledby="prin-h">
+        <div class="section-grid">
+          <div class="label"><h2 id="prin-h" class="overline">Principal</h2></div>
+          <div class="content">
+            <p class="name">Dr Carol Buttle</p>
+            <p>Assurance Matters is led by Dr Carol Buttle, who brings over 35 years' experience in information assurance and governance across regulated, high-consequence sectors. Her experience spans defence, counter-terrorism, healthcare, banking and finance.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="contact-h">
+        <div class="contact-panel">
+          <h2 id="contact-h">Get in touch</h2>
+          <p>For enquiries about our services:</p>
+          <a href="mailto:contact@assurancematters.co.uk">contact@assurancematters.co.uk</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Assurance Matters is a trading name of BBS IT Associates Limited, registered in England and Wales, company number 06504444. Registered office: 1 Cricklade Court, Cricklade Street, Old Town, Swindon SN1 3EY.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
